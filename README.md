@@ -13,6 +13,12 @@ A simple command line tool for comparing text files using the simhash algorithm 
 npm install
 npm link
 ````
+
+Or if you would like to install globally
+````
+npm install https://github.com/sjhorn/node-simhash -g
+````
+
 ## Command line tool usage
 
 Using node
@@ -32,6 +38,8 @@ simhash.compare(string1, string2);
 ````
 
 ### Methods
+#### <a name="summary"></a>.summary(file1, file2)
+Compare two text strings using both simhash and jaccard index and print a summary
 
 #### <a name="compare"></a>.compare(file1, file2)
 Compare two text strings using both simhash and jaccard index
