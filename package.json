@@ -1,0 +1,30 @@
+{
+  "name": "node-simhash",
+  "version": "0.1.0",
+  "description": "Command Line tool that compares two text files using simhash",
+  "main": "lib/simhash.js",
+  "bin": {
+    "simhash": "bin/simhash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sjhorn/node-simhash.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "bin": "bin",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "crc-32": "~0.3.0",
+    "natural": "0.4.0",
+    "node-fetch": "^1.5.3",
+    "request": "^2.72.0",
+    "yargs": "^4.7.1"
+  },
+  "author": "Scott Horn",
+  "license": "MIT"
+}
