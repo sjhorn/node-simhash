@@ -2,6 +2,9 @@
 
 A simple command line tool for comparing text files using the simhash algorithm and contrasting with the jaccard index.
 
+[![Build Status](https://travis-ci.org/sjhorn/node-simhash.svg?branch=master)](https://travis-ci.org/sjhorn/node-simhash)
+
+
 ## References
 
 [Near duplicate detection (moz.com)](https://moz.com/devblog/near-duplicate-detection/)
