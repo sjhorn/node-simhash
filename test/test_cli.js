@@ -14,7 +14,7 @@ exports['Cli Compare Files'] = function(test) {
         if (error != null) {
             test.ok(false, "cli does not successfully compare files");
         } else {
-            test.ok(stdout.indexOf("Similarity is") != -1, "Failed to display summary");
+            test.ok(stdout.indexOf("Simhash similarity is") != -1, "Failed to display summary");
         }
         test.done();
     })
@@ -25,7 +25,7 @@ exports['Cli Compare sites'] = function(test) {
         if (error != null) {
             test.ok(false, "cli does not successfully compare pages");
         } else {
-            test.ok(stdout.indexOf("Similarity is") != -1, "Failed to display summary");
+            test.ok(stdout.indexOf("Simhash similarity is") != -1, "Failed to display summary");
         }
         test.done();
     })
