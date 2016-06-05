@@ -4,9 +4,9 @@
   "description": "Command Line tool that compares two text files using simhash",
   "homepage": "https://github.com/sjhorn/node-simhash",
   "keywords": [
-      "simhash",
-      "jaccard index",
-      "compare text"
+    "simhash",
+    "jaccard index",
+    "compare text"
   ],
   "repository": {
     "type": "git",
@@ -28,14 +28,20 @@
     "node-fetch": "^1.5.3",
     "yargs": "^4.7.1"
   },
+  "devDependencies": {
+    "nodeunit": "^0.9.1"
+  },
   "bin": {
     "simhash": "bin/simhash"
   },
+  "scripts": {
+    "test": "nodeunit"
+  },
   "licenses": [
-   {
-     "type": "Apache",
-     "url": "https://github.com/sjhorn/node-simhash/blob/master/LICENSE"
-   }
+    {
+      "type": "Apache",
+      "url": "https://github.com/sjhorn/node-simhash/blob/master/LICENSE"
+    }
   ],
   "author": "Scott Horn"
 }
