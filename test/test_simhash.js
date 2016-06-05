@@ -15,6 +15,7 @@ exports.compareSameFile = function(test) {
 exports.compareSimilarFile = function(test) {
     var file1 = fs.readFileSync("test/sample1.txt", "utf8");
     var file2 = fs.readFileSync("test/sample2.txt", "utf8");
-    test.equal(simhash.compare(file1, file2), 0.6875);
+    var estimate = Math.round(simhash.compare(file1, file2) * 100);
+    test.equal(estimate, 67);
     test.done();
 }
